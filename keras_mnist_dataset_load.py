@@ -15,7 +15,7 @@ for i in range(0,9):
     plt.subplot(k) #subplot takes a 3 digit integer where 1st digit=number of row, 2nd digit=number of column and 3rd digit = position
     k+=1
     random_index=np.random.randint(0,len(x_train)) #generating a random number using numpy
-    # plt.imshow(x_train[random_index]) #ploting the image in the image
+    # plt.imshow(x_train[random_index]) #ploting the image
     #we can also plot the image in gray scale using cmap=plt.get_cmap('gray')
     plt.imshow(x_train[random_index], cmap=plt.get_cmap('gray')) #ploting the image in grayscale
 plt.show() #showing the image
